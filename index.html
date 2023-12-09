@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Daftar Tamu Undangan Pernikahan</title>
+</head>
+<body>
+
+  <div class="container mt-3">
+
+    <h2 class="mb-3">Daftar Tamu Undangan Pernikahan</h2>
+
+    <!-- Form untuk Create -->
+    <form id="createForm">
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" class="form-control" id="nama" name="Nama" required
+        placeholder="Nama Lenkap">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required
+        placeholder="xxxxx@gmail.com">
+      </div>
+
+      <div class="form-group">
+        <label for="address">Alamat:</label>
+        <input type="text" class="form-control" id="alamat" name="alamat">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Nomor HP:</label>
+        <input type="tel" class="form-control" id="HP" name="HP"
+        placeholder="08XX-XXXX-XXXX">
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="Laki-Laki" name="gender" value="Laki-Laki">
+          <label class="form-check-label" for="Laki-Laki">Laki-Laki</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="Perempuan" name="gender" value="Perempuan">
+          <label class="form-check-label" for="Perempuan">Perempuan</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="button" class="btn btn-primary" onclick="createData()">Submit</button>
+      </div>
+    </form>
+
+    <!-- Tabel untuk Read dan Update -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>nama</th>
+          <th>Email</th>
+          <th>Alamat</th>
+          <th>HP</th>
+          <th>Gender</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="dataTable">
+        <!-- Data akan ditampilkan di sini -->
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

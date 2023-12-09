@@ -1,0 +1,53 @@
+/* Selector untuk judul */
+h2 {
+    text-align: center;
+}
+
+/* Selector untuk input text dan select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Selector untuk tombol submit */
+.btn-primary {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-warning{
+    width: 50%;
+    background-color: orangered;
+    color: white;
+}
+.btn-danger{
+    width: 50%;
+    background-color: maroon;
+    color: white;
+}
+
+
+/* Hover effect untuk tombol submit */
+.btn-primary:hover {
+    background-color: lightblue;
+}
+
+/* Selector untuk container */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
